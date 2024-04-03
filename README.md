@@ -8,6 +8,6 @@
 4. [Арсений Бутенко](https://github.com/arsenybut) Лидер, капитан, наш проводник в мир моды!!
 5. [Полина Голубева](https://github.com/golubinkaa)
 6. [Мочалова Юлия](https://github.com/MochalovaYulia)
-7. [Никита Чернов](https://github.com/hekitociha)
+7. [Никита Чернов](https://github.com/hekitociha) Русский хакер, живущий в Майами. Лицо проекта)
 
 
