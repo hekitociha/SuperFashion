@@ -3,7 +3,7 @@
 
 ### Команда
 1. [Ярослав Голубев](https://github.com/Rubix327)
-2. Павел Чувикин
+2. [Павел Чувикин](https://github.com/pavell85598)
 3. [Даниил Климов](https://github.com/Dudergov365)
 4. [Арсений Бутенко](https://github.com/arsenybut) Лидер, капитан, наш проводник в мир моды!!
 5. [Полина Голубева](https://github.com/golubinkaa)
