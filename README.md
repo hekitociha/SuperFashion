@@ -78,6 +78,8 @@
 Доставка заказа оплачивается дополнительно по тарифам компаний, осуществляющих доставку
 Наименование	Пользователь делает заказ
 
-![image](https://github.com/hekitociha/SuperFashion/assets/145964627/01ca7dda-d33e-4a36-a22e-aafc5fce5361)
+![image](https://github.com/hekitociha/SuperFashion/assets/145964627/8ccd42ff-16fd-4e66-ab50-4cc861face43)
+![image](https://github.com/hekitociha/SuperFashion/assets/145964627/29f4ef04-037f-49c6-9db7-27057cccd910)
+
 
 
