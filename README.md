@@ -51,6 +51,12 @@
 ### Бизнес-процессы
 ![EPHEklZ5D1A](https://github.com/hekitociha/SuperFashion/assets/145964627/ff07d482-0895-4560-b935-2235b867c4d4)
 
+### Контекстная диаграмма
+![TPkXSadEZ8Y](https://github.com/hekitociha/SuperFashion/assets/145964627/863d13bc-efd5-46d5-9e50-e70fa7620163)
+
+### Диаграмма вариантов использования
+![image](https://github.com/hekitociha/SuperFashion/assets/145964627/d0128cd8-5bc2-4105-952c-c3abb5fed79d)
+
 
 ### Взаимодествия пользователя с системой
 
