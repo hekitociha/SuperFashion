@@ -55,8 +55,7 @@
 ![TPkXSadEZ8Y](https://github.com/hekitociha/SuperFashion/assets/145964627/863d13bc-efd5-46d5-9e50-e70fa7620163)
 
 ### Диаграмма вариантов использования
-![image](https://github.com/hekitociha/SuperFashion/assets/145964627/d0128cd8-5bc2-4105-952c-c3abb5fed79d)
-
+![image](https://github.com/hekitociha/SuperFashion/assets/145964627/1a6afd7e-8713-4a83-8f25-2f2d9a0e3654)
 
 ### Взаимодествия пользователя с системой
 
