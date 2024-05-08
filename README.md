@@ -48,12 +48,9 @@
 - ![image](https://github.com/hekitociha/SuperFashion/assets/145964627/948f3677-0bdf-4804-bd4d-05142dca1e58)
 
 
-### Внешние системы
-![img.png](external-systems.png)
+### Бизнес-процессы
+![EPHEklZ5D1A](https://github.com/hekitociha/SuperFashion/assets/145964627/ff07d482-0895-4560-b935-2235b867c4d4)
 
-### Описание бизнес процесса
-
-Доставка ощусествляется средствами оутсорса (СДЕК, Почта России, BoxBerry и тд.)
 
 ### Взаимодествия пользователя с системой
 
