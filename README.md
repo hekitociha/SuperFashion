@@ -57,6 +57,12 @@
 ### Диаграмма вариантов использования
 ![image](https://github.com/hekitociha/SuperFashion/assets/145964627/1a6afd7e-8713-4a83-8f25-2f2d9a0e3654)
 
+### Диаграмма классов
+![SuperFashion-CD](https://github.com/hekitociha/SuperFashion/assets/57916157/5e33f6a0-41e4-4269-8da7-dc728f0564f6)
+
+### ER-диаграмма (схема базы данных)
+![SuperFashion-ER](https://github.com/hekitociha/SuperFashion/assets/57916157/1d03a46b-7a03-42d5-b969-22f52b92cfa7)
+
 
 ### Взаимодествия пользователя с системой
 
