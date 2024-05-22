@@ -52,7 +52,7 @@
 ![EPHEklZ5D1A](https://github.com/hekitociha/SuperFashion/assets/145964627/ff07d482-0895-4560-b935-2235b867c4d4)
 
 ### Контекстная диаграмма
-![TPkXSadEZ8Y](https://github.com/hekitociha/SuperFashion/assets/145964627/863d13bc-efd5-46d5-9e50-e70fa7620163)
+![нпгнарпсртмор](https://github.com/hekitociha/SuperFashion/assets/165883704/901f232a-d179-416a-9e1b-9ebbd2780af0)
 
 ### Диаграмма вариантов использования
 ![image](https://github.com/hekitociha/SuperFashion/assets/145964627/0f616625-f15b-4854-a18c-05fdf222ec9d)
