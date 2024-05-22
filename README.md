@@ -1,5 +1,5 @@
 # SuperFashion
-
+Интернет-магазин одежды в Telegram.
 
 ### Команда
 1. [Ярослав Голубев](https://github.com/Rubix327)
