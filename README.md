@@ -55,7 +55,7 @@
 ![TPkXSadEZ8Y](https://github.com/hekitociha/SuperFashion/assets/145964627/863d13bc-efd5-46d5-9e50-e70fa7620163)
 
 ### Диаграмма вариантов использования
-![image](https://github.com/hekitociha/SuperFashion/assets/145964627/8a69661f-d1b2-4a61-911e-b0e927481089)
+![image](https://github.com/hekitociha/SuperFashion/assets/145964627/0f616625-f15b-4854-a18c-05fdf222ec9d)
 
 ### Диаграмма классов
 ![SuperFashion-CD2](https://github.com/hekitociha/SuperFashion/assets/57916157/d06b3b9f-3359-409c-8243-dd2f36965252)
