@@ -64,7 +64,7 @@
 ![SuperFashion ER (1)](https://github.com/hekitociha/SuperFashion/assets/57916157/24a81aa9-ec4a-473a-ac08-4a4b656df80d)
 
 ### ER-диаграмма №2
-![SuperFashion-ER2](https://github.com/hekitociha/SuperFashion/assets/57916157/6cbb1f8a-6fc9-4fed-a0db-95ba9845ca4a)
+![SuperFashion-ER2](https://github.com/hekitociha/SuperFashion/assets/57916157/6e4d2279-a1b1-4bd5-a95c-a245b212d9ce)
 
 
 ### Взаимодествия пользователя с системой
