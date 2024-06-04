@@ -66,6 +66,8 @@
 ### ER-диаграмма №2
 ![SuperFashion-ER2](https://github.com/hekitociha/SuperFashion/assets/57916157/6e4d2279-a1b1-4bd5-a95c-a245b212d9ce)
 
+### Ограничения полей базы данных
+![Ограничения полей бд](https://github.com/hekitociha/SuperFashion/assets/57916157/7c122252-def4-4aa0-b22b-36f76f03f318)
 
 ### Взаимодествия пользователя с системой
 
