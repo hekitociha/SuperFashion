@@ -66,7 +66,7 @@
 ### ER-диаграмма №2
 ![SuperFashion-ER2](https://github.com/hekitociha/SuperFashion/assets/57916157/6e4d2279-a1b1-4bd5-a95c-a245b212d9ce)
 
-### Диаграмма изменения статуса заказа
+### Диаграмма переходов состояний
 ![image](https://github.com/hekitociha/SuperFashion/assets/165883704/ff44d6d7-eb4b-4b82-a0d9-488620b0c137)
 
 ### Ограничения полей базы данных
