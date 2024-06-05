@@ -75,6 +75,9 @@
 ### Диаграмма последовательности
 ![Диаграмма последовательности](https://github.com/hekitociha/SuperFashion/assets/57916157/3091967d-aefc-4280-a292-b21734eda57f)
 
+### Диаграмма деятельности
+![image](https://github.com/hekitociha/SuperFashion/assets/165883704/a7308845-e249-4996-83db-e6e1962112ee)
+
 ### Взаимодествия пользователя с системой
 
 Пользователь запускает Telegram бота. 
