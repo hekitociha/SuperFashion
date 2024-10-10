@@ -1,0 +1,63 @@
+workspace "Name" "Description" {
+
+    !identifiers hierarchical
+
+    model {
+        a = person "Администратор"
+        m = person "Менеджер"
+        b = person "Покупатель"
+        ps = softwareSystem "Платежная система"
+        
+        ss = softwareSystem "Система" {
+            wa = container "Telegram Бот"
+            db = container "База данных" {
+                tags "Database"
+            }
+            api = container "Telegram API"
+        }
+
+        a -> ss.wa "Использует"
+        m -> ss.wa "Использует"
+        b -> ss.wa "Использует"
+        
+        ss.wa -> ss.db "Записывает и читает из"
+        ss.wa -> ps "Использует для проведения оплаты"
+        ss.wa -> ss.api "Использует"
+    }
+
+    views {
+        systemContext ss "Diagram1" {
+            include *
+            autolayout lr
+        }
+
+        container ss "Diagram2" {
+            include *
+            autolayout lr
+        }
+
+        styles {
+            element "Element" {
+                color #ffffff
+            }
+            element "Person" {
+                background #048c04
+                shape person
+            }
+            element "Software System" {
+                background #047804
+            }
+            element "Container" {
+                background #55aa55
+            }
+                element "Database" {
+                shape cylinder
+            }
+        }
+    }
+
+    configuration {
+        scope softwaresystem
+    }
+
+}
