@@ -55,7 +55,7 @@
 ![нпгнарпсртмор](https://github.com/hekitociha/SuperFashion/assets/165883704/901f232a-d179-416a-9e1b-9ebbd2780af0)
 
 ### Диаграмма вариантов использования
-![image](https://github.com/hekitociha/SuperFashion/assets/145964627/5ef8765c-e8bb-441c-951e-866fb11a06fe)
+![image](https://github.com/user-attachments/assets/96d8b9c9-a87f-4a61-ad9a-dd34fc8159f7)
 
 ### Диаграмма классов
 ![SuperFashion-CD drawio](https://github.com/hekitociha/SuperFashion/assets/57916157/03d7a50c-c8ce-4926-915c-23a93acb72b4)
@@ -67,7 +67,7 @@
 ![SuperFashion-ER2](https://github.com/hekitociha/SuperFashion/assets/57916157/6e4d2279-a1b1-4bd5-a95c-a245b212d9ce)
 
 ### Диаграмма переходов состояний
-![image](https://github.com/hekitociha/SuperFashion/assets/165883704/ff44d6d7-eb4b-4b82-a0d9-488620b0c137)
+![image](https://github.com/user-attachments/assets/2d90b528-8cef-4042-a695-2ce26bc85863)
 
 ### Ограничения полей базы данных
 ![Ограничения полей бд](https://github.com/hekitociha/SuperFashion/assets/57916157/7c122252-def4-4aa0-b22b-36f76f03f318)
