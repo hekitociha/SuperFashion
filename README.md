@@ -102,20 +102,36 @@
 ### Диаграмма классов
 ![SuperFashion-CD drawio](https://github.com/hekitociha/SuperFashion/assets/57916157/03d7a50c-c8ce-4926-915c-23a93acb72b4)
 
-#### Product (Товар)
+**Product (Товар)**
 - Атрибуты: id, name, description, price, category, imageUrl
 - Методы: viewDetails(), checkAvailability(), applyDiscount()
 
-#### Order (Заказ)
+**Order (Заказ)**
 - Атрибуты: id, customerId, managerId
 - Методы: calculateTotal(), updateStatus(), confirmPayment()
 
-#### User (Пользователь)
+**OrderItem (Позиция заказа)**
+- Атрибуты: orderId, productId, amount
+- Методы: addItem(), removeItem(), clear()
+
+**User (Пользователь)**
 - Атрибуты: id, nickname, firstname, lastname, phoneNumber, deliveryAddress, role
 - Методы: register(), login(), updateProfile()
 
-#### Order (Платеж)
-- Атрибуты: 
+**Warehouse (Склад)**
+- Атрибуты: id, address
+- Методы: changeAddress(), close(), open()
+
+**WarehouseItem (Товар на складе)**
+- Атрибуты: productId, warehouseId, amount
+- Методы: addProduct(), removeProduct(), changeAmount()
+
+**Cart (Товар в корзине)**
+- Атрибуты: userId, productId, amount
+- Методы: addProduct(), removeProduct(), clear()
+
+**OrderStatusHistory (История статусов заказа)**
+- Атрибуты: orderId, datetime, status
 
 ### ER-диаграмма №1
 ![SuperFashion ER (1)](https://github.com/hekitociha/SuperFashion/assets/57916157/24a81aa9-ec4a-473a-ac08-4a4b656df80d)
