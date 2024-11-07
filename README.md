@@ -60,6 +60,13 @@
 ### Архитектурнозначимые варианты использования
 ![2222](https://github.com/user-attachments/assets/3f64c6c7-a8c0-410b-95ed-91ad04d0a002)
 
+- **Отслеживание заказа:** [Диаграмма](https://drive.google.com/file/d/1YFFLyM7UAvKkaxkjHJJBcHCF-g9wc_hx/view?usp=sharing) | [Экранные формы](https://drive.google.com/file/d/1YzY1tzJXsjQumBxb8s82cJaCEhKo-vEt/view?usp=sharing)
+- **Оплата заказа:** [Диаграмма](https://drive.google.com/file/d/1SwPTUlbphTVwxqBHFe2hzU-df7eN0yTc/view?usp=sharing) | [Экранные формы](https://drive.google.com/file/d/1puPvpNUBP9d8QI3tcOkxjsyntLT6j_kN/view?usp=sharing)
+- **Оформление заказа:** [Диаграмма](https://drive.google.com/file/d/1V4KTssza9VNOubh1BbFimy8kN9CNL6lt/view?usp=sharing) | [Экранные формы](https://drive.google.com/file/d/1PdZ8k7KGSw76DtkN43cCeYoqZuuymgyK/view?usp=sharing)
+- **Просмотр каталога товаров:** [Диаграмма](https://drive.google.com/file/d/1ZOvdU2qXx3fIgAr19DFfOqoXwJBk16Uf/view?usp=sharing) | [Экранные формы](https://drive.google.com/file/d/1yi7mq93Wj2fQtIVJQ25r0fK9Od6buLpq/view?usp=sharing)
+
+### Описание архитектурнозначимых вариантов использования
+
 **Просмотр каталога товаров**
 - Акторы: Покупатель
 - Описание: покупатель может просмотреть список доступных товаров в каталоге.
