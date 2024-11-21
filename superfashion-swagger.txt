@@ -1,0 +1,283 @@
+openapi: 3.0.0
+info:
+  title: SuperFashion Bot Payment API
+  version: 1.0.0
+  description: API для интеграции телеграм-бота с внешней платежной системой.
+servers:
+  - url: https://pay.bank.isuct.ru/v2/
+    description: Сервер оплаты ХимТех Банка
+
+paths:
+  /payment/process:
+  
+    post:
+      tags:
+      - "Методы"
+      summary: Обработка платежа через внешнюю платежную систему
+      description: Передает данные о платеже в платежную систему и возвращает статус операции.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                cardNumber:
+                  type: string
+                  description: Номер кредитной карты, зашифрованный.
+                cvv:
+                  type: string
+                  description: Трехзначный код безопасности, зашифрованный.
+                  example: "123"
+                amount:
+                  type: number
+                  description: Сумма платежа.
+                currency:
+                  type: string
+                  description: Валюта платежа.
+                orderId:
+                  type: string
+                  description: Идентификатор заказа.
+                paymentMethod:
+                  type: string
+                  enum: [card, paypal, apple_pay, google_pay]
+                  description: Метод оплаты.
+                payerName:
+                  type: string
+                  description: Имя держателя карты.
+                payerEmail:
+                  type: string
+                  format: email
+                  description: Email плательщика для отправки квитанции.
+                requestTimestamp:
+                  type: string
+                  format: date-time
+                  description: Время отправки запроса.
+              required:
+                - cardNumber
+                - cvv
+                - amount
+                - currency
+                - orderId
+                - paymentMethod
+                - payerName
+                - payerEmail
+                - requestTimestamp
+      responses:
+        '200':
+          description: Платеж успешно обработан.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Уникальный идентификатор транзакции.
+                  status:
+                    type: string
+                    enum: [success]
+                    description: Статус успешной обработки платежа.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время проведения транзакции.
+        '400':
+          description: Ошибка запроса.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+        '402':
+          description: Ошибка платежа.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    enum: [INSUFFICIENT_FUNDS, ACCOUNT_BLOCKED, INVALID_CARD_DATA]
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время попытки проведения транзакции.
+        '500':
+          description: Внутренняя ошибка сервера.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время ошибки.
+
+  /payment/status/{transactionId}:
+    get:
+      tags:
+      - "Методы"
+      summary: Получение статуса платежа
+      description: Позволяет проверить статус ранее выполненной транзакции.
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Уникальный идентификатор транзакции.
+      responses:
+        '200':
+          description: Информация о статусе платежа.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Уникальный идентификатор транзакции.
+                  status:
+                    type: string
+                    enum: [success, pending, failed]
+                    description: Текущий статус платежа.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время запроса.
+        '404':
+          description: Транзакция не найдена.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время запроса.
+  /payment/refund:
+    post:
+      tags:
+      - "Методы"
+      summary: Запрос на возврат платежа
+      description: Позволяет инициировать возврат средств по ранее выполненной транзакции.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                transactionId:
+                  type: string
+                  description: Уникальный идентификатор транзакции, по которой запрашивается возврат.
+                orderId:
+                  type: string
+                  description: Уникальный идентификатор заказа (должен совпадать с тем, что передавался при создании платежа).
+                refundAmount:
+                  type: number
+                  format: float
+                  description: Сумма возврата. 
+                reason:
+                  type: string
+                  description: Причина возврата.
+                payerName:
+                  type: string
+                  description: Имя плательщика для проверки соответствия оригинальному платежу.
+                payerEmail:
+                  type: string
+                  format: email
+                  description: Email плательщика для уведомления.
+              required:
+                - transactionId
+                - orderId
+                - refundAmount
+                - reason
+                - payerName
+                - payerEmail
+      responses:
+        '200':
+          description: Запрос на возврат успешно обработан.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  refundId:
+                    type: string
+                    description: Уникальный идентификатор возврата.
+                  status:
+                    type: string
+                    enum: [accepted, rejected, processed, pending]
+                    description: Статус возврата.
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Время обработки возврата.
+        '400':
+          description: Ошибка запроса на возврат.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+        '404':
+          description: Платеж или заказ не найдены.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    enum: [TRANSACTION_NOT_FOUND, ORDER_NOT_FOUND]
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+        '500':
+          description: Внутренняя ошибка сервера.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    enum: [SERVER_INTERNAL_ERROR]
+                    description: Код ошибки.
+                  message:
+                    type: string
+                    description: Описание ошибки.
+
